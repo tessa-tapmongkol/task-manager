@@ -46,8 +46,7 @@ A simple, local to-do task manager for tracking and completing everyday tasks.
 - **Pagination**: Add paginated API responses and UI controls so that very long task lists don't load all items at once, improving performance and usability.
 
 ## Dependencies
-.NET SDK 8.x
-React
+.NET SDK 8.x, React
 
 ## Running application
 1. Start backend: cd backend/TaskManagerAPI && dotnet restore && dotnet run
