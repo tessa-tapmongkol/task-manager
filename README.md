@@ -51,5 +51,5 @@ React
 
 ## Running application
 1. Start backend: cd backend/TaskManagerAPI && dotnet restore && dotnet run
-2. Start frontend: cd frontend && npm start
+2. Start frontend: cd frontend && npm install && npm start
 3. Open browser to [localhost:3000](http://localhost:3000)
