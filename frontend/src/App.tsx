@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, FormEvent } from 'react';
+import { ChangeEvent, useState, useEffect, useCallback, FormEvent } from 'react';
 import './App.css';
 import { TodoItem as TodoItemType } from './types';
 import { UpdateTodoRequest } from './types';
@@ -90,6 +90,10 @@ const App = () => {
     []
   );
 
+  const onChangeTitle = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    setNewTitle(e.target.value);
+  }, []);
+
   return (
     <div className="app">
       <h1 className="appTitle">To-Do List</h1>
@@ -100,9 +104,9 @@ const App = () => {
           className="addInput"
           placeholder="What needs to be done?"
           value={newTitle}
-          onChange={(e) => setNewTitle(e.target.value)}
+          onChange={onChangeTitle}
         />
-        <button type="submit" className="btn btn-add" disabled={!newTitle.trim()}>
+        <button type="submit" className="btn btnAdd" disabled={!newTitle.trim()}>
           Add
         </button>
       </form>
