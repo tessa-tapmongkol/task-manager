@@ -47,5 +47,5 @@ A simple, local to-do task manager for tracking and completing everyday tasks.
 
 ## Running application
 1. Start backend: cd backend/TaskManagerAPI && dotnet run
-2. Start frontend: cd frontend && npm start
+2. Start frontend: cd frontend && npm install && npm start
 3. Open browser to [localhost:3000](http://localhost:3000)
