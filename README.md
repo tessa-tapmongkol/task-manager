@@ -45,7 +45,11 @@ A simple, local to-do task manager for tracking and completing everyday tasks.
 - **Sorting and filtering**: Add the ability to sort tasks (e.g. by creation date, alphabetically) and filter them (e.g. show only completed or incomplete tasks) to make managing larger lists easier.
 - **Pagination**: Add paginated API responses and UI controls so that very long task lists don't load all items at once, improving performance and usability.
 
+## Dependencies
+.NET SDK 8.x
+React
+
 ## Running application
-1. Start backend: cd backend/TaskManagerAPI && dotnet run
+1. Start backend: cd backend/TaskManagerAPI && dotnet restore && dotnet run
 2. Start frontend: cd frontend && npm start
 3. Open browser to [localhost:3000](http://localhost:3000)
